@@ -36,9 +36,9 @@
 }
 
 h1 {
-  color: #f0f0f0;
+  color: #e1e1e7;
   font-weight: lighter;
-  font-size: 200px;
+  font-size: 210px;
   font-family: fantasy;
 }
 
@@ -51,8 +51,8 @@ h2 {
 }
 
 h3 {
-  color: hotpink;
-  font-size: 30px;
+  color: white;
+  font-size: 31px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
