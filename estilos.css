@@ -1,0 +1,444 @@
+@charset "UTF-8";
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.blanco {
+  color: #e1e1e7;
+}
+
+.fondoNegro {
+  background-color: black;
+}
+
+.fondoContacto {
+  background-image: url(img/fondo.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+#fondoPoa {
+  background: linear-gradient(rgba(0, 0, 0, 0.7) 40%, rgba(255, 255, 255, 0.0760679272) 80%), url(img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 88vh;
+  width: 100vw;
+  
+}
+
+#fondoPoa img {
+  margin-top: 80px;
+  
+}
+
+h1 {
+  color: #f0f0f0;
+  font-weight: lighter;
+  font-size: 200px;
+  font-family: fantasy;
+}
+
+h2 {
+  color: #8dc533;
+  font-style: italic;
+  font-family: monospace;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: hotpink;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.naranja {
+  color: #a7510b;
+}
+
+.rojo {
+  color: red;
+}
+
+.naranjaClaro {
+  color: orange;
+}
+
+.amarillo {
+  color: yellow;
+}
+
+/* nav ul li a {
+    align-items: center;
+    font-size: 30px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;   
+} */
+table tr th {
+  font-size: 30px;
+}
+
+table tr td ol li {
+  list-style-type: lower-roman;
+  list-style-position: inside;
+  text-align: justify;
+  margin-left: 15px;
+  margin: 25px 150px 25px 25px;
+}
+
+/*seccion nosotros grids*/
+.grids {
+  display: grid;
+}
+
+#headerNosotros {
+  grid-template-columns: 1fr;
+}
+
+.contenedor3 {
+  grid-template-columns: 1fr;
+}
+
+#nosotros p, #trabajos p {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  line-height: 20px;
+  word-spacing: 7px;
+}
+
+/*seccion servicios grids*/
+#headerServicios {
+  grid-template-columns: 1fr;
+}
+
+.fichaServicios {
+  color: blanchedalmond;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px;
+}
+
+/*seccion contenedor grids*/
+#headerContacto {
+  grid-template-columns: 1fr;
+}
+
+#contacto {
+  grid-template-columns: 1fr;
+}
+
+/*fin de grids en las secciones*/
+/* nav ul li{    
+
+    margin: 30px 20px 30px 20px;
+    position: relative; 
+}*/
+/* nav ul{
+
+    padding-top: 50px; 
+}*/
+#fotoNosotros {
+  border: 10px groove white;
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
+  left: -70px;
+}
+
+nav ul li:hover ul {
+  display: block;
+  width: 200%;
+  background-color: rgba(97, 6, 100, 0.849);
+  padding: 0px;
+  border-radius: 5px;
+  margin-top: 15px;
+  line-height: 10px;
+}
+
+ul li ul li a {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  margin: 70px;
+  background-color: rgba(28, 77, 28, 0.596);
+  border-radius: 25px;
+}
+
+.contenedor img {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.contenedor h3 {
+  margin-bottom: 50px;
+}
+
+.contenedor1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 70px 70px 70px 70px;
+  border-radius: 15px;
+  padding: 70px;
+  font-size: 15px;
+}
+
+.contenedor1 form {
+  width: 500 px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-size: 15;
+  border-radius: 15px;
+}
+
+.contenedor1 form input, textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.contenedor3 {
+  margin: 70px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+.contenedor3 section article p {
+  margin: 0px !important;
+}
+
+/* clase grids */
+.claseGrid {
+  display: grid;
+  grid-template-areas: "imagen1" "parrafo1" "imagen2" "parrafo2" "imagen3" "parrafo3" "imagen4" "parrafo4";
+}
+
+.imagen1 {
+  grid-area: imagen1;
+}
+
+.parrafo1 {
+  grid-area: parrafo1;
+}
+
+.imagen2 {
+  grid-area: imagen2;
+}
+
+.parrafo2 {
+  background-color: rgba(60, 134, 76, 0.705);
+  grid-area: parrafo2;
+}
+
+.imagen3 {
+  grid-area: imagen3;
+}
+
+.parrafo3 {
+  grid-area: parrafo3;
+}
+
+.imagen4 {
+  grid-area: imagen4;
+}
+
+.parrafo4 {
+  grid-area: parrafo4;
+}
+
+nav ul {
+  display: block;
+}
+
+header {
+  background-color: black;
+}
+
+/* nav ul li{
+    list-style: none; 
+}*/
+#headerIndex {
+  grid-template-columns: 1fr;
+}
+
+header nav a {
+  font-size: 12px;
+}
+
+header nav a:hover {
+  background: rgba(255, 255, 255, 0.425);
+  /* font-size: 35px; */
+  border-radius: 5px;
+}
+
+header nav a {
+  transition: all 2s;
+}
+
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.425);
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header nav ul li a {
+  transition: all 2s;
+}
+
+#fotoNosotros:hover {
+  transform: scale(1.3);
+}
+
+#fotoNosotros {
+  transition: all 2s;
+}
+
+.fichaServicios:hover {
+  background-color: rgba(1, 14, 4, 0.856);
+  transform: scale(1.1);
+}
+
+.fichaServicios {
+  transition: all 2s;
+}
+
+/*aplicando boostrap*/
+.tamaño {
+  width: 80%;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: #053305;
+}
+
+h1 {
+  font-size: 100px !important;
+}
+
+/*a partir da aca aplico sass*/
+/*variables*/
+/*bloque secction en contacto.html*/
+.contacto--background {
+  background-color: #b9121296;
+ 
+}
+
+
+/*bloque section, en nosotros.html*/
+.nosotros--align {
+  text-align: left;
+}
+
+
+/*bloque section en servicios.html*/
+.nuestros--text {
+  text-decoration: underline;
+  color: white !important;
+}
+
+footer h4{
+  background-color: #053305;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.footerContacto{
+  margin-top: 0vh;
+}
+
+.footerIndex{
+  margin-top: 0vh;
+}
+
+
+.footerNosotros{
+  margin-top: 9.5vh;
+}
+.footerServicios{
+  margin-top: 52vh;
+}
+ body{
+   height: 100vh;
+ }
+
+@media only screen and (min-width: 480px) {
+  .claseGrid {
+    grid-template-areas: "imagen1 parrafo1 parrafo1" "imagen2 parrafo2 parrafo2" "imagen3 parrafo3 parrafo3" "imagen4 parrafo4 parrafo4";
+  }
+}
+@media only screen and (min-width: 600px) {
+  .claseGrid {
+    grid-template-areas: "parrafo1 imagen1" "parrafo2 imagen2" "parrafo3 imagen3" "parrafo4 imagen4";
+  }
+
+  header {
+    background-color: #053305;
+  }
+
+  .fondoNegro {
+    background-color: #10460f;
+  }
+}
+@media only screen and (min-width: 880px) {
+  .claseGrid {
+    grid-template-areas: "imagen1 parrafo1 parrafo1" "imagen2 parrafo2 parrafo2" "imagen3 parrafo3 parrafo3" "imagen4 parrafo4 parrafo4";
+  }
+
+  /* header nav ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  } */
+  .fondoNegro {
+    background-color: #053305;
+  }
+
+  .blanco {
+    color: white;
+  }
+
+  .contenedorServicios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contenedor1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contenedor3 section article {
+    display: flex;
+    margin: 70px;
+    flex-direction: row-reverse;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
