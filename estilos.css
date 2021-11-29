@@ -37,8 +37,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7) 40%, rgba(255, 255, 255, 0.0760679) 80%), url(img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 88vh;
-  width: 100vw;
 }
 
 #fondoPoa img {
@@ -53,7 +51,7 @@ h1 {
 }
 
 h2 {
-  color: #8dc533;
+  color: #ffffff;
   font-style: italic;
   font-family: monospace;
   font-size: 45px;
@@ -75,12 +73,9 @@ h3 {
   color: red;
 }
 
-.naranjaClaro {
-  color: orange;
-}
-
-.amarillo {
-  color: yellow;
+.griaClarito {
+  color: #e5e5e2;
+  font-weight: normal;
 }
 
 table tr th {
@@ -146,7 +141,7 @@ table tr td ol li {
 
 /*fin de grids en las secciones*/
 #fotoNosotros {
-  border: 10px groove white;
+  border-radius: 10px;
 }
 
 ul li ul {
@@ -300,8 +295,8 @@ header nav ul li a {
 }
 
 #fotoNosotros:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #fotoNosotros {
@@ -350,13 +345,7 @@ h1 {
   text-align: left;
 }
 
-/*bloque section en servicios.html*/
-.nuestros--text {
-  text-decoration: underline;
-  color: white !important;
-}
-
-footer h4 {
+.footers {
   background-color: #053305;
   color: white;
   text-transform: uppercase;
@@ -364,13 +353,53 @@ footer h4 {
   padding-bottom: 10px;
 }
 
-.marginServicios {
-  margin-top: 37vh;
+.containerF1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.containerF1 p {
+  color: gray;
+}
+
+.containerF1 label {
+  color: grey;
+}
+
+.containerF2 {
+  background-color: #022002;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
+.fichaServicios {
+  color: white !important;
+}
+
+p {
+  font-weight: bold;
+}
+
+.backN {
+  background-color: rgba(0, 0, 0, 0.651);
+  margin: 80px;
+  border-radius: 15px;
+}
+
+#fR {
+  background-color: #330303;
 }
 
 @media only screen and (min-width: 480px) {
   .claseGrid {
         grid-template-areas: "imagen1 parrafo1 parrafo1" "imagen2 parrafo2 parrafo2" "imagen3 parrafo3 parrafo3" "imagen4 parrafo4 parrafo4";
+  }
+  .containerF1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

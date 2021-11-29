@@ -36,8 +36,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7) 40%, rgba(255, 255, 255, 0.0760679272) 80%), url(img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 88vh;
-  width: 100vw;
+  //height: 88vh;
+  //width: 100vw;
   
 }
 
@@ -54,7 +54,7 @@ h1 {
 }
 
 h2 {
-  color: #8dc533;
+  color: #ffffff;
   font-style: italic;
   font-family: monospace;
   font-size: 45px;
@@ -76,12 +76,10 @@ h3 {
   color: red;
 }
 
-.naranjaClaro {
-  color: orange;
-}
 
-.amarillo {
-  color: yellow;
+.griaClarito {
+  color: rgb(229, 229, 226);
+  font-weight: normal;
 }
 
 
@@ -121,6 +119,7 @@ table tr td ol li {
 /*seccion servicios grids*/
 #headerServicios {
   grid-template-columns: 1fr;
+  
 }
 
 .fichaServicios {
@@ -143,7 +142,7 @@ table tr td ol li {
 /*fin de grids en las secciones*/
 
 #fotoNosotros {
-  border: 10px groove white;
+  border-radius: 10px; 
 }
 
 ul li ul {
@@ -296,7 +295,7 @@ header nav ul li a {
 }
 
 #fotoNosotros:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 #fotoNosotros {
@@ -345,31 +344,75 @@ h1 {
 }
 
 
-/*bloque section en servicios.html*/
-.nuestros--text {
-  text-decoration: underline;
-  color: white !important;
+.footers{
+    background-color: #053305;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
 
+.containerF1{
+    
+    display: flex;
+    text-align: center;
+    p{
+        color: gray;
+    }
+    label{
+        color: grey;
+    }
+}   
+    
 
 
-footer h4{
-  background-color: #053305;
-  color: white;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
- }
+
+
+.containerF2{
+    background-color: #022002;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    
+
+}
+ .fichaServicios{
+     color: white!important;
+ } 
+    p{
+        font-weight: bold;
+    }
+
+.backN{
+    background-color: rgba(0, 0, 0, 0.651);
+    margin: 80px;
+    border-radius: 15px;
+}
+
+#fR{
+    background-color: rgb(51, 3, 3);
+}
+
+// footer h4{
+//   background-color: #053305e1;
+//   color: white;
+//   text-transform: uppercase;
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+//  }
   
-.marginServicios{
-    margin-top: 37vh;
-}
+
 
 @media only screen and (min-width: 480px) {
   .claseGrid {
     grid-template-areas: "imagen1 parrafo1 parrafo1" "imagen2 parrafo2 parrafo2" "imagen3 parrafo3 parrafo3" "imagen4 parrafo4 parrafo4";
   }
+
+  .containerF1{
+    display: flex;
+    }   
 }
+
 @media only screen and (min-width: 600px) {
   .claseGrid {
     grid-template-areas: "parrafo1 imagen1" "parrafo2 imagen2" "parrafo3 imagen3" "parrafo4 imagen4";
