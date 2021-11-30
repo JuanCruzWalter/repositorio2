@@ -305,7 +305,7 @@ header nav ul li a {
 }
 
 .fichaServicios:hover {
-  background-color: rgba(1, 14, 4, 0.856);
+  background-color: rgba(1, 14, 4, 0.658);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -337,7 +337,7 @@ h1 {
 /*variables*/
 /*bloque secction en contacto.html*/
 .contacto--background {
-  background-color: #b9121296;
+  background-color: #0c462288;
 }
 
 /*bloque section, en nosotros.html*/
@@ -413,7 +413,7 @@ p {
         grid-template-areas: "parrafo1 imagen1" "parrafo2 imagen2" "parrafo3 imagen3" "parrafo4 imagen4";
   }
   header {
-    background-color: #053305;
+    background-color: #053305bb;
   }
   .fondoNegro {
     background-color: #10460f;
