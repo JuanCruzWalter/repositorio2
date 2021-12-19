@@ -36,6 +36,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7) 40%, rgba(255, 255, 255, 0.0760679272) 80%), url(img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  grid-template-columns: 1fr;
   //height: 88vh;
   //width: 100vw;
   
@@ -43,13 +45,19 @@
 
 #fondoPoa img {
   margin-top: 80px;
+  width: 50%;
   
 }
-
+.titulo{
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  font-size: calc(2em+2vw)!important;
+  font-family: fantasy;
+}
 h1 {
   color: rgb(255, 255, 255);
   font-weight: lighter;
-  font-size: 210px;
+  font-size: calc(2em+2vw)!important;
   font-family: fantasy;
 }
 
@@ -107,11 +115,19 @@ table tr td ol li {
 .contenedor3 {
   grid-template-columns: 1fr;
 }
-
+#nosotros{
+  grid-template-columns: 1fr;
+}
+#nosotros .contenedorNosotros{
+  width: 100%;
+}
+#nosotros img{
+  width: 60%;
+}
 #nosotros p, #trabajos p {
   text-align: justify;
   width: 90%;
-  margin: auto;
+  margin: auto!important;
   line-height: 20px;
   word-spacing: 7px;
 }
@@ -137,6 +153,13 @@ table tr td ol li {
 
 #contacto {
   grid-template-columns: 1fr;
+}
+
+.contenedorMapa{
+  width: 100%;
+}
+.contenedorMapa iframe{
+  width: 100%;
 }
 
 /*fin de grids en las secciones*/
@@ -186,9 +209,7 @@ ul li ul li a {
 
 .contenedor1 {
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 70px 70px 70px 70px;
-  border-radius: 15px;
-  padding: 70px;
+  margin: 0px 0px 0px 0px;
   font-size: 15px;
 }
 
@@ -207,10 +228,7 @@ ul li ul li a {
 }
 
 .contenedor3 {
-  margin: 70px;
-  padding: 40px;
   background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 15px;
 }
 
 .contenedor3 section article p {
@@ -325,9 +343,6 @@ header {
   background-color: #053305;
 }
 
-h1 {
-  font-size: 100px !important;
-}
 
 /*a partir da aca aplico sass*/
 /*variables*/
@@ -385,8 +400,8 @@ h1 {
 
 .backN{
     background-color: rgba(0, 0, 0, 0.651);
-    margin: 80px;
-    border-radius: 15px;
+    // margin: 80px;
+    grid-template-columns: 1fr;
 }
 
 #fR{
@@ -454,6 +469,18 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
+  }
+  #fondoPoa img {
+    margin-top: 80px;
+    width: 20%;
+    
+  }
+  #nosotros img{
+    width: 80%;
+  }
+  .contenedorMapa {
+    width: 50%;
   }
 }
 @media only screen and (min-width: 1024px) {

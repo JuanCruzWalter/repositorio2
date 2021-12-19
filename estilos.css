@@ -37,16 +37,27 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7) 40%, rgba(255, 255, 255, 0.0760679) 80%), url(img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 #fondoPoa img {
   margin-top: 80px;
+  width: 50%;
+}
+
+.titulo {
+  color: white;
+  font-weight: lighter;
+  font-size: calc(2em+2vw) !important;
+  font-family: fantasy;
 }
 
 h1 {
   color: white;
   font-weight: lighter;
-  font-size: 210px;
+  font-size: calc(2em+2vw) !important;
   font-family: fantasy;
 }
 
@@ -106,10 +117,23 @@ table tr td ol li {
       grid-template-columns: 1fr;
 }
 
+#nosotros {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#nosotros .contenedorNosotros {
+  width: 100%;
+}
+
+#nosotros img {
+  width: 60%;
+}
+
 #nosotros p, #trabajos p {
   text-align: justify;
   width: 90%;
-  margin: auto;
+  margin: auto !important;
   line-height: 20px;
   word-spacing: 7px;
 }
@@ -137,6 +161,14 @@ table tr td ol li {
 #contacto {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+}
+
+.contenedorMapa {
+  width: 100%;
+}
+
+.contenedorMapa iframe {
+  width: 100%;
 }
 
 /*fin de grids en las secciones*/
@@ -189,9 +221,7 @@ ul li ul li a {
 
 .contenedor1 {
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 70px 70px 70px 70px;
-  border-radius: 15px;
-  padding: 70px;
+  margin: 0px 0px 0px 0px;
   font-size: 15px;
 }
 
@@ -210,10 +240,7 @@ ul li ul li a {
 }
 
 .contenedor3 {
-  margin: 70px;
-  padding: 40px;
   background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 15px;
 }
 
 .contenedor3 section article p {
@@ -329,10 +356,6 @@ header {
   background-color: #053305;
 }
 
-h1 {
-  font-size: 100px !important;
-}
-
 /*a partir da aca aplico sass*/
 /*variables*/
 /*bloque secction en contacto.html*/
@@ -384,8 +407,8 @@ p {
 
 .backN {
   background-color: rgba(0, 0, 0, 0.651);
-  margin: 80px;
-  border-radius: 15px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 #fR {
@@ -449,6 +472,16 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #fondoPoa img {
+    margin-top: 80px;
+    width: 20%;
+  }
+  #nosotros img {
+    width: 80%;
+  }
+  .contenedorMapa {
+    width: 50%;
   }
 }
 
